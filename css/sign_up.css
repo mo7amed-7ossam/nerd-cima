@@ -1,0 +1,421 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  text-transform: capitalize;
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  background-color: rgb(33, 37, 41);
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+main header {
+  padding: 0% !important;
+  margin: 0% !important;
+  background-image: linear-gradient(
+    to bottom,
+    #fcda8a,
+    #ffc984,
+    #ffb881,
+    #fca881,
+    #f69984
+  );
+  height: 50px;
+  z-index: 9999999 !important;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+main header nav {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(33, 37, 41);
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 2vw;
+  z-index: 9999999;
+  box-shadow: 0px 2px 2px #f69984;
+}
+
+main header nav .taps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  height: 70%;
+}
+
+main header nav .taps > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+}
+
+main header nav .taps > li > a {
+  color: rgb(185, 184, 184);
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main header nav .taps > li > a:hover {
+  color: #ffffff;
+}
+
+main header nav .taps > li .drop {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background-color: #5e5e5e;
+  width: 15vw;
+  border-radius: 5px;
+  display: none;
+}
+
+main header nav .taps > li:hover .drop {
+  display: block;
+}
+
+main header nav .taps li .drop ul {
+  width: 100%;
+}
+main header nav .taps li .drop ul li {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border-bottom: solid #6d6d6d 1px;
+  transition: 0.3s ease;
+}
+
+main header nav .taps li .drop ul li:hover {
+  background-color: #292929 !important;
+  box-shadow: 0px 0px 5px #9b9b9b;
+  transform: scale(1.1);
+}
+
+main header nav .taps li .drop ul li a {
+  color: #e2e1e1;
+  display: block;
+  width: 100%;
+}
+
+main header nav .logo img {
+  width: 100px;
+  padding-top: 10px;
+}
+
+main .main {
+  flex-grow: 1;
+  position: relative;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  padding-top: 4%;
+  overflow: hidden;
+}
+
+main .main > .card-con {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .main > .card-con .card {
+  width: 612px;
+  background-color: rgb(33, 37, 41);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px #000;
+  display: flex;
+}
+
+main .main > .card-con .card .img {
+  width: 30%;
+  padding: 1vw;
+}
+
+main .main > .card-con .card .img img {
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    #fcda8a,
+    #ffc984,
+    #ffb881,
+    #fca881,
+    #f69984
+  );
+  border-radius: 50%;
+  padding: 3%;
+}
+
+main .main > .card-con .card .user-details {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2% 0px;
+  position: relative;
+}
+
+.focus {
+  box-shadow: 0px 0px 5px #dfdfdf;
+  width: 93.6%;
+  font-size: 1.2vw;
+  color: #00000000 !important;
+  border-radius: 3px;
+  position: absolute;
+  padding: 1px 0px;
+  transition: 0.5s ease;
+  display: none;
+}
+
+main .main > .card-con .card .user-details > div {
+  color: #e2e1e1;
+  width: 95%;
+  font-size: 1.2vw;
+}
+
+main .main > .card-con .card .user-details > div > div {
+  flex-grow: 1;
+  background-color: #dfdfdf;
+  text-align: center;
+  margin-left: 2%;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 3px;
+  padding: 0%;
+}
+
+main .main > .card-con .card .user-details > div > div span {
+  font-weight: 600;
+  color: rgb(58, 57, 57) !important;
+  white-space: nowrap;
+  border-radius: 3px;
+  margin-left: 2%;
+  font-size: 1.2vw;
+}
+
+main .main > .card-con .card .user-details > div > .name span {
+  text-transform: uppercase;
+}
+
+main .main > .card-con .card .user-details > div > div .password {
+  font-weight: 600;
+  color: rgb(58, 57, 57) !important;
+  white-space: nowrap;
+  border-radius: 3px;
+  margin-left: 2%;
+  font-size: 1.2vw;
+  background-color: #dfdfdf;
+  width: 100%;
+  text-align: center;
+}
+
+main .main > .card-con .card .user-details .birth-con > div {
+  background-color: #dfdfdf00 !important;
+  width: 100%;
+}
+
+main .main > .card-con .card .user-details > .birth-con > div > div {
+  background-color: #dfdfdf;
+  border-radius: 2px;
+  text-transform: lowercase;
+  width: 20%;
+  position: relative;
+  overflow: hidden;
+}
+
+main .main > .card-con .card .user-details > .birth-con > div > div .value {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background-color: #dfdfdf;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.information {
+  display: none;
+}
+.information .con {
+  background-color: #004585;
+  display: flex;
+  justify-content: space-around;
+  padding: 2vw 1vw;
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.information .con > div {
+  width: 31%;
+  background-color: rgb(24, 24, 24);
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 1vw;
+}
+
+.information > div h2 {
+  color: #9b9b9b;
+  text-align: center;
+  padding-bottom: 0.5vw;
+}
+
+.information > div .son {
+  width: 100%;
+  min-height: 200px;
+  background-color: rgb(33, 37, 41);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dfdfdf;
+}
+/* ################# */
+
+main .main > .sign-con {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+main .main > .sign-con h1 {
+  color: #8b8b8b;
+}
+
+main .main > .sign-con form {
+  width: 80%;
+  margin: 0px auto;
+}
+main .main > .sign-con form .input-father {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+main .main > .sign-con form .input-father input {
+  width: 100%;
+  padding: 5px 15px;
+  padding-top: 13px;
+  font-size: 1.2vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+main .main > .sign-con form .input-father label {
+  position: absolute;
+  color: #5e5e5e;
+  top: 50%;
+  left: 2%;
+  font-size: 1.2vw;
+  transform: translateY(-50%);
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+main .main > .sign-con form .date-father {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+  width: 90%;
+}
+
+main .main > .sign-con form .date-father select {
+  width: 20%;
+  padding: 5px 5px;
+  border-radius: 3px;
+}
+
+main .main > .sign-con button {
+  width: 25%;
+  margin: 30px auto;
+  background-color: #1172cc;
+  font-size: 1.5vw;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ################## */
+
+footer {
+  width: 100%;
+  height: 15vw;
+  background-color: rgba(0, 0, 0, 0.692);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: none;
+}
+
+footer .son {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a {
+  color: #ffffff;
+  font-family: "Cairo", sans-serif;
+}
+
+footer a:hover {
+  text-decoration: solid underline #ffffff !important;
+}
+
+footer .powered {
+  position: absolute;
+  color: #ffffff;
+  font-family: "Cairo", sans-serif;
+  bottom: 0.5vw;
+  right: 0.5vw;
+  background-color: #009ac13f;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0px 5px;
+  font-size: 12px;
+}
